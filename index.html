@@ -58,7 +58,7 @@
             const suffix = this.dataset.sizing || '';
             // console.log(suffix) // inputun içine yazdığımız data-sizing değeri
             // console.log(this.name)  // inputun içindeki name
-            document.documentElement.style.setProperty(`--${this.name}`,this.value + suffix)
+            document.documentElement.style.setProperty(`--${this.name}`,this.value + suffix) // setProperty css özellikleri değiştirmek için
         }
 
         inputs.forEach(input => input.addEventListener('change',handleUpdate));
